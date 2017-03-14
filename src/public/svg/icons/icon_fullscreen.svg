@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg2" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <g transform="matrix(1.3333333,0,0,-1.3333333,0,32)" id="g10">
+        <g transform="translate(15.0003,24.0003)" id="g12">
+            <path id="path14" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 V -2.001 H 6.999 V -9 H 9 v 9 z m -15,0 v -9 h 1.999 v 6.999 H -6 V 0 Z M 6.999,-15 v -7.001 H 0 V -24 h 9 v 9 z M -15,-15 v -9 h 9 v 1.999 h -7.001 V -15 Z"/>
+        </g>
+    </g>
+</svg>

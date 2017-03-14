@@ -1,0 +1,529 @@
+.intro-slider {
+
+  position: relative;
+
+  #header {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    height: 60px;
+
+    .header-navbar {
+      > li {
+        > a {
+          cursor: not-allowed;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+  }
+
+  &.overlayik {
+    &:after {
+      content: " ";
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 9;
+      background: rgba(0, 0, 0, .7);
+    }
+
+    &.allow-nav {
+      &:after {
+        right: @sidebarMenuWidth;
+      }
+
+      &:before {
+        content: " ";
+        position: fixed;
+        left: ~"calc(100% - @{sidebarMenuWidth})";
+        top: 0;
+        bottom: 0;
+        right: -@sidebarMenuWidth;
+        z-index: 5;
+      }
+
+    }
+
+  }
+
+  .intro-content {
+    display: none;
+  }
+
+  .intro-video, .intro-challenge, .intro-chart, .intro-video-script, .intro-navigation, .intro-progress, .intro-skipping, .intro-references, .intro-pi, .intro-profile {
+    .intro-title {
+      font: 24px/1 'Apex New Light';
+      color: @orange;
+    }
+
+    .intro-desc {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .intro-content {
+      position: absolute;
+      width: 100%;
+      background: @white;
+      padding: 6px 26px 26px;
+      z-index: 11;
+
+      .btn-previous, .btn-next {
+        width: 137px;
+      }
+    }
+  }
+
+  .intro-references {
+    .intro-content {
+      display: block;
+      width: 400px !important;
+      top: 75px;
+      left: -140px;
+      background: white !important;
+      height: auto !important;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        margin-left: -4px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #ffffff;
+      }
+    }
+  }
+
+  .intro-pi-container, .intro-profile-container, .intro-references-container {
+    background-color: white;
+    position: relative;
+    z-index: 11;
+  }
+
+  .intro-pi {
+    .intro-content {
+      display: block;
+      width: 400px !important;
+      top: 75px;
+      right: -165px;
+      background: white !important;
+      height: auto !important;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        margin-left: -4px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #ffffff;
+      }
+    }
+  }
+
+  .intro-profile {
+    .intro-content {
+      display: block;
+      width: 400px !important;
+      top: 75px;
+      right: 115px;
+      background: white !important;
+      height: auto !important;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: -7px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #ffffff;
+      }
+    }
+  }
+
+  .intro-challenge {
+
+    .video-cover {
+      z-index: 11;
+    }
+
+    .intro-challenge-content {
+      top: 295px;
+      display: block;
+      z-index: 11;
+      
+      &:after {
+        content: " ";
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        margin-left: -4px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #ffffff;
+      }
+
+    }
+  }
+
+  .intro-skipping {
+    .intro-content {
+      display: block;
+      width: 400px !important;
+      top: 60px;
+      right: 10px;
+      background: white !important;
+      height: auto !important;
+
+      position: absolute;
+      z-index: 11;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: -7px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #ffffff;
+      }
+    }
+  }
+
+  .intro-progress {
+    position: relative;
+    z-index: 11;
+
+    .active {
+      position: relative;
+    }
+
+    .intro-content {
+      display: block;
+      width: 400px !important;
+      bottom: 20px;
+      left: -160px;
+      background: white !important;
+      height: auto !important;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        bottom: -7px;
+        right: 50%;
+        margin-left: -4px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid #ffffff;
+      }
+    }
+  }
+
+  .intro-navigation {
+    .intro-content {
+      display: block;
+      width: 400px;
+      bottom: -25px;
+      left: -418px;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        margin-top: -3px;
+        right: -7px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid #ffffff;
+      }
+    }
+
+    .btn {
+      position: relative;
+      z-index: 11;
+
+      &.disabled.btn-previous {
+        background-color: #c6cbcf;
+      }
+    }
+  }
+
+  .hotspot-container {
+    display: none;
+    &.intro-hotspots {
+      display: block;
+
+      .intro-title {
+        font: 24px/1 'Apex New Light';
+        color: @orange;
+      }
+
+      .intro-content {
+        display: block;
+        width: 400px;
+      }
+
+      .hotspot {
+        z-index: 11;
+        .hotspot-tooltip {
+          max-width: 400px;
+          padding-bottom: 26px;
+        }
+      }
+
+    }
+  }
+
+  .intro-full-screen-content {
+    display: none;
+  }
+
+  .full-screen-btn {
+    background: white;
+    padding: 5px;
+  }
+
+  .intro-full-screen {
+
+    .intro-title {
+      font: 24px/1 'Apex New Light';
+      color: @orange;
+    }
+
+    .intro-desc {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .intro-full-screen-content {
+      position: absolute;
+      width: 100%;
+      background: @white;
+      padding: 6px 26px 26px;
+
+      .btn-previous, .btn-next {
+        width: 137px;
+      }
+    }
+  }
+
+  .intro-video {
+
+    .video-player {
+      z-index: 11;
+    }
+
+    .intro-content {
+
+      &.intro-video-content {
+        display: block;
+      }
+
+      top: calc(~"100% + 8px");
+      z-index: 11;
+
+      &:before {
+        content: " ";
+        position: absolute;
+        top: -7px;
+        right: 50%;
+        margin-left: -4px;
+
+        width: 0;
+        height: 0;
+
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+
+        border-bottom: 7px solid @white;
+      }
+
+    }
+  }
+
+  .intro-chart {
+    position: relative;
+    z-index: 11;
+
+    .intro-content {
+      display: block;
+      max-width: 420px;
+      left: -450px;
+      bottom: 40px;
+
+      &:before {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        margin-top: -3px;
+        right: -7px;
+
+        width: 0;
+        height: 0;
+
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+
+        border-left: 7px solid @white;
+      }
+    }
+
+    .chart-container {
+      position: relative;
+    }
+  }
+
+  .intro-video-script {
+    position: relative;
+    z-index: 11;
+    margin: 0 -10px;
+    padding: 0 10px;
+    overflow-y: visible !important;
+
+    .intro-content {
+      display: block;
+      top: -200px;
+      left: 0;
+
+      &:before {
+        content: " ";
+        position: absolute;
+        bottom: -7px;
+        right: 50%;
+        margin-left: -4px;
+
+        width: 0;
+        height: 0;
+
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+
+        border-top: 7px solid @white;
+      }
+    }
+  }
+
+  .intro-full-screen {
+    position: relative;
+    z-index: 11;
+
+    .full-screen-icon-container {
+      display: inline-block;
+      padding: 2px;
+      background: white;
+    }
+
+    .intro-full-screen-content {
+      top: -65px;
+      right: 45px;
+      width: 400px;
+      display: block;
+
+      &:before {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        right: -7px;
+        margin-top: -4px;
+
+        width: 0;
+        height: 0;
+
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+
+        border-left: 7px solid @white;
+      }
+    }
+  }
+
+}
+
+#intro-menu {
+  .intro-content {
+    position: absolute;
+    top: -45px;
+    right: 60px;
+    width: 190px;
+    z-index: 4;
+    background: @white;
+    text-align: center;
+    padding: 15px 0;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 7px;
+      right: -7px;
+
+      width: 0;
+      height: 0;
+
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 7px solid @white;
+    }
+  }
+
+  &:before {
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, .7);
+  }
+
+  .intro-toggle {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: -50px;
+    background: @white;
+
+    img {
+      width: 16px;
+    }
+  }
+
+  .intro-desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .btn-ok {
+    width: 138px;
+  }
+
+}

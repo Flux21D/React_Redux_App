@@ -1,0 +1,44 @@
+#download-center {
+  background: #c6cbd0;
+  height: 100%;
+  padding: 20px 0;
+
+  .download-list {
+    .flex();
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 80px;
+    margin: 0;
+    list-style: none;
+  }
+
+  .download-list-item {
+    max-width: 350px;
+    width: 100%;
+    background: @white;
+    padding: 26px;
+    margin: 26px 10px;
+
+    .thumbnail-container {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .title {
+      margin-top: 15px;
+    }
+
+    .btn-download-container {
+      text-align: center;
+
+      .btn {
+        padding: 0 24px;
+      }
+    }
+
+  }
+
+}

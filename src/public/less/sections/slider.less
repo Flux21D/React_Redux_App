@@ -1,0 +1,145 @@
+#slider {
+  background: #f5f6f7;
+  height: 100%;
+  position: relative;
+
+  > div {
+    height: 100%;
+  }
+
+  .slide-container {
+    .flex();
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+
+    .left-side {
+      position: relative;
+      background: #ffffff;
+
+      max-width: 520px;
+      width: 100%;
+      padding: 26px;
+
+      .btn-expand {
+        right: -36px;
+      }
+
+      -webkit-transition: left .3s;
+      -moz-transition: left .3s;
+      -ms-transition: left .3s;
+      -o-transition: left .3s;
+      transition: left .3s;
+
+    }
+
+    .right-side {
+      width: 100%;
+      padding: 0 26px;
+      position: relative;
+
+      .arrow-buttons-container {
+        .flex();
+        align-items: center;
+
+        padding: 13px 0;
+
+        .btn {
+          min-width: 164px;
+        }
+
+        .buttons-bar-container {
+          width: 100%;
+        }
+
+      }
+
+      .btn-expand {
+        left: 0;
+      }
+
+    }
+  }
+
+  .btn-expand {
+    display: inline-block;
+    width: 36px;
+    height: 47px;
+    background: @white;
+    position: absolute;
+    top: 50%;
+    margin-top: -57px;
+    z-index: 2;
+    cursor: pointer;
+
+    -webkit-box-shadow: 2px 0 4px 0 #ccc;
+    -moz-box-shadow: 2px 0 4px 0 #ccc;
+    box-shadow: 2px 0 4px 0 #ccc;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      margin-top: 13px;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: @screen-lg) {
+  #slider {
+    background: #c6cbd0;
+    height: ~"calc(100% - 7px)";
+
+    .btn-expand {
+      display: none;
+    }
+
+    .slide-container {
+      .right-side {
+        padding: 26px;
+
+        .arrow-buttons-container {
+          padding: 26px 0 0;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  #slider {
+    .slide-container {
+      &.expanded {
+        position: relative;
+
+        &:before {
+          content: " ";
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, .7);
+          z-index: 2;
+        }
+
+        .left-side {
+          top: -60px;
+          bottom: -30px;
+          left: 0;
+        }
+      }
+
+      .left-side {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -520px;
+        z-index: 5;
+      }
+    }
+
+  }
+}

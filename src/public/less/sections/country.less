@@ -1,0 +1,51 @@
+#country {
+  height: 100%;
+  padding: 10px 0;
+
+  .country-title {
+    .text-center();
+
+    i {
+      margin-right: 20px;
+    }
+  }
+
+  .countries-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+
+    list-style: none;
+    margin: 53px auto 0;
+    padding: 0;
+    .clearfix();
+    width: 438px;
+  }
+
+  .country-item {
+    font-family: "Apex New Bold";
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 24px;
+    color: @grey;
+    cursor: pointer;
+
+    &.has-langs {
+      color: #818b95;
+
+      span {
+        color: @grey;
+      }
+    }
+  }
+
+  .wrp-btn-cancel {
+    margin-top: 25px;
+    text-align: center;
+
+    .btn {
+      width: 137px;
+    }
+  }
+
+}

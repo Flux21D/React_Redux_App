@@ -1,0 +1,147 @@
+.chart-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background: #ffffff;
+
+  &:after {
+    display: block;
+    content: " ";
+    padding-top: ~"calc(100vh - 152px)";
+  }
+
+  .chart-content-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .chart-header {
+    padding: 0 52px 0 26px;
+    position: relative;
+
+    .title {
+      font: 24px/1 "Apex New Light";
+      color: @orange;
+    }
+
+    .description {
+      font: 12px/20px "Apex New Book";
+      color: @grey;
+    }
+
+    .full-screen-btn {
+      position: absolute;
+      right: 26px;
+      top: 2px;
+      cursor: pointer;
+
+      &.disabled {
+        cursor: not-allowed;
+        opacity: 0.65;
+        filter: alpha(opacity=65);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+}
+
+.chart-content {
+  padding: 0 26px;
+  position: relative;
+
+  .chart-image {
+    position: relative;
+
+    img {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  .exit-full-screen {
+    display: none;
+  }
+
+}
+
+.my-modal-dialog {
+  &.full-screen {
+    .chart-header {
+      display: none;
+    }
+  }
+}
+
+.chart-expanded {
+  .exit-full-screen {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 3;
+
+    img {
+      width: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: @screen-lg) {
+  .chart-container {
+
+    &:after {
+      padding-top: 68%;
+    }
+  }
+}
+
+#keys {
+  max-width: 285px;
+  display: inline-block;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  .placebo {
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+
+  .adalimumab {
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+
+  > div {
+    margin-bottom: 10px;
+
+    img {
+      max-height: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  > p {
+    padding: 0 15px 10px;
+    margin: 0;
+  }
+
+  img {
+    display: inline-block;
+    width: auto;
+  }
+}

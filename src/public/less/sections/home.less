@@ -1,0 +1,131 @@
+#home {
+  height: 100%;
+  position: relative;
+
+  &.home-nav-active {
+    .home-info {
+      display: none;
+    }
+  }
+
+  .home-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 740px;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font: 64px/1 "Apex New Light";
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      font: 24px/28px "Apex New Light";
+      text-align: center;
+      color: white;
+    }
+  }
+
+  ul.home-nav {
+    position: relative;
+    z-index: 10;
+    display: table;
+    table-layout: fixed;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: ~"calc(100vh - 60px - 25px)";
+
+    li {
+      display: table-cell;
+      height: 100%;
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 19px;
+      text-align: center;
+      padding: 0 15px 50px;
+      vertical-align: bottom;
+
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+      
+      .info {
+        display: none;
+      }
+
+      .visit {
+        margin-top: 26px;
+        .visit-link {
+          color: @orange;
+          font: 16px/20px "Apex New Bold";
+        }
+
+        .visit-icon {
+          position: relative;
+          top: -10px;
+          display: inline-block;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          border: 2px solid @orange;
+          margin-right: 10px;
+
+          img {
+            position: relative;
+            top: 5px;
+          }
+        }
+      }
+
+      &.active {
+        width: 290px;
+
+        background-image: -webkit-gradient(
+                linear, left top, left bottom, from(rgba(250, 250, 250, 1)),
+                to(rgba(250, 250, 250, 0.3)), color-stop(.4, #ffffff)
+        );
+
+        .info {
+          display: block;
+          padding-top: 70px;
+          margin-bottom: 75px;
+          .text-left();
+
+          .info-icon-container {
+            .text-center();
+            margin-bottom: 40px;
+          }
+          img {
+            max-height: 100px;
+            max-width: 75px;
+          }
+        }
+      }
+
+      .bottom-icon {
+        height: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        img {
+          max-height: 20px;
+          max-width: 20px;
+        }
+      }
+    }
+
+
+
+  }
+}

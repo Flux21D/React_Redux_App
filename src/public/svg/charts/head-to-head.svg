@@ -1,0 +1,159 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 281" width="650" height="281">
+    <defs>
+        <linearGradient id="MyGradient1" x1="0%" y1="20%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#B6B7B9"></stop>
+            <stop offset="100%" stop-color="#fff"></stop>
+        </linearGradient>
+        <linearGradient id="MyGradient2" x1="0%" y1="20%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#F36C21"></stop>
+            <stop offset="100%" stop-color="#fff"></stop>
+        </linearGradient>
+        <linearGradient id="MyGradient3" x1="0%" y1="20%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#425363"></stop>
+            <stop offset="100%" stop-color="#fff"></stop>
+        </linearGradient>
+    </defs>
+    <style type="text/css">
+        .tag1 {
+        fill: url("#MyGradient1");
+        }
+
+        .tag2 {
+        fill: url("#MyGradient2");
+        }
+
+        .tag3 {
+        fill: url("#MyGradient3");
+        }
+
+        .grid line {
+        stroke-width: 1;
+        }
+
+        .grid.y-grid line {
+        stroke: #0FBED3;
+        }
+
+        .grid.x-grid line {
+        stroke: #F36C21;
+        }
+        }
+    </style>
+    <g class="grid x-grid">
+        <line x1="0" x2="0" y1="0" y2="200"></line>
+    </g>
+    <g class="grid y-grid">
+        <line x1="0" x2="100%" y1="200" y2="200"></line>
+    </g>
+    <g>
+        <g transform="scale(1, -1) translate(0, -200)">
+            <g>
+                <g>
+                    <rect class="tag1" x="10" y="0" width="12px">
+                        <animate attributeName="height" from="0" to="40%" dur="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag2" x="25" y="0" width="12px">
+                        <animate attributeName="height" from="0" to="70%" dur="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag3" x="40" y="0" width="12px">
+                        <animate attributeName="height" from="0" to="61%" dur="2s" fill="freeze"></animate>
+                    </rect>
+                </g>
+            </g>
+            <g transform="translate(50)">
+                <g>
+                    <rect class="tag1" x="10" y="0" width="12px" height="17%">
+                        <animate attributeName="height" from="0" to="17%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag2" x="25" y="0" width="12px" height="45%">
+                        <animate attributeName="height" from="0" to="45%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag3" x="40" y="0" width="12px" height="35%">
+                        <animate attributeName="height" from="0" to="35%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                </g>
+            </g>
+            <g transform="translate(100)">
+                <g>
+                    <rect class="tag1" x="10" y="0" width="12px" height="5%">
+                        <animate attributeName="height" from="0" to="5%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag2" x="25" y="0" width="12px" height="19%">
+                        <animate attributeName="height" from="0" to="19%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag3" x="40" y="0" width="12px" height="12%">
+                        <animate attributeName="height" from="0" to="12%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                </g>
+            </g>
+        </g>
+        <g transform="scale(1, -1) translate(150, -200)">
+            <g>
+                <g>
+                    <rect class="tag1" x="10" y="0" width="12px">
+                        <animate attributeName="height" from="0" to="37%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag2" x="25" y="0" width="12px">
+                        <animate attributeName="height" from="0" to="74%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag3" x="40" y="0" width="12px">
+                        <animate attributeName="height" from="0" to="66%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                </g>
+            </g>
+            <g transform="translate(50)">
+                <g>
+                    <rect class="tag1" x="10" y="0" width="2%" height="19%">
+                        <animate attributeName="height" from="0" to="19%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag2" x="25" y="0" width="2%" height="51%">
+                        <animate attributeName="height" from="0" to="51%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag3" x="40" y="0" width="2%" height="45%">
+                        <animate attributeName="height" from="0" to="45%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                </g>
+            </g>
+            <g transform="translate(100)">
+                <g>
+                    <rect class="tag1" x="10" y="0" width="2%" height="8%">
+                        <animate attributeName="height" from="0" to="8%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag2" x="25" y="0" width="2%" height="30%">
+                        <animate attributeName="height" from="0" to="30%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                    <rect class="tag3" x="40" y="0" width="2%" height="22%">
+                        <animate attributeName="height" from="0" to="22%" dur="2s" begin="2s" fill="freeze"></animate>
+                    </rect>
+                </g>
+            </g>
+        </g>
+        <g transform="scale(1, -1) translate(300, -200)">
+            <g>
+                <rect class="tag2" x="10" y="0" width="2%" height="71%">
+                    <animate attributeName="height" from="0" to="71%" dur="2s" begin="2s" fill="freeze"></animate>
+                </rect>
+                <rect class="tag3" x="25" y="0" width="2%" height="62%">
+                    <animate attributeName="height" from="0" to="62%" dur="2s" begin="2s" fill="freeze"></animate>
+                </rect>
+            </g>
+            <g transform="translate(30)">
+                <rect class="tag2" x="10" y="0" width="2%" height="56%">
+                    <animate attributeName="height" from="0" to="56%" dur="2s" begin="2s" fill="freeze"></animate>
+                </rect>
+                <rect class="tag3" x="25" y="0" width="2%" height="47%">
+                    <animate attributeName="height" from="0" to="47%" dur="2s" begin="2s" fill="freeze"></animate>
+                </rect>
+            </g>
+            <g transform="translate(60)">
+                <rect class="tag2" x="10" y="0" width="2%" height="37%">
+                    <animate attributeName="height" from="0" to="37%" dur="2s" begin="2s" fill="freeze"></animate>
+                </rect>
+                <rect class="tag3" x="25" y="0" width="2%" height="31%">
+                    <animate attributeName="height" from="0" to="31%" dur="2s" begin="2s" fill="freeze"></animate>
+                </rect>
+            </g>
+        </g>
+    </g><!-- react-text: 640 -->
+    Sorry, your browser does not support inline SVG.<!-- /react-text -->
+</svg>

@@ -1,0 +1,169 @@
+@import "../../../node_modules/bootstrap/less/bootstrap";
+
+@import "components/miscellaneous";
+@import "components/typography";
+@import "components/variables";
+@import "components/buttons";
+@import "components/fonts";
+@import "components/forms";
+@import "components/modal";
+@import "components/my-modal";
+@import "components/video-player";
+@import "components/hotspot";
+@import "components/chart-bars";
+@import "components/chart-lines";
+@import "components/progress-bar";
+@import "sections/home";
+@import "sections/sidebar-nav";
+@import "sections/header";
+@import "sections/quiz";
+@import "sections/video";
+@import "sections/login";
+@import "sections/register";
+@import "sections/index";
+@import "sections/country";
+@import "sections/slider";
+@import "sections/slider-progress";
+@import "sections/charts";
+@import "sections/intro";
+@import "sections/cookie";
+@import "sections/references";
+@import "sections/settings";
+@import "sections/footer";
+@import "sections/chart";
+@import "sections/charts-modal";
+@import "sections/download-center";
+@import "sections/end";
+@import "sections/glossary";
+@import "sections/error";
+@import "sections/terms";
+@import "sections/contact-us";
+
+body {
+  position: relative;
+  font: 12px/20px "Apex New Book";
+  background: @light-grey;
+  color: @grey;
+  height: 100%;
+}
+
+.overlay {
+  &:before {
+    content: " ";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+  }
+}
+
+#wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &.my-modal-open {
+    overflow: hidden;
+  }
+
+  &.sidebar-nav {
+
+    #content-wrapper {
+      left: -@sidebarMenuWidth;
+      right: @sidebarMenuWidth;
+    }
+
+  }
+
+  .flex {
+    align-items: stretch;
+    min-height: 100%;
+  }
+}
+
+#content-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-right: -@sidebarMenuWidth;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+#main-content {
+  position: relative;
+  width: ~"calc(100% - 397px)";
+  min-height: 100vh;
+}
+
+#content {
+  background: url("../img/bg.jpg") top center / cover;
+  background-repeat: no-repeat;
+  min-height: ~"calc(100vh - 60px - 26px)";
+  position: relative;
+
+  > div {
+    min-height: ~"calc(100vh - 60px - 26px)";
+    height: 100%;
+  }
+
+  .content-title {
+    margin: 0 0 26px;
+    text-align: center;
+  }
+
+}
+
+.fixed-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 2;
+
+  .fix-box-inner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    padding: 0 50px;
+
+    .page-box-close {
+      position: absolute;
+      top: 0;
+      right: -40px;
+      cursor: pointer;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .title {
+      text-align: center;
+      font: 24px/1 'Apex New Light';
+      color: #f36c00 !important;
+      margin-top: 25px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+@import "hacks";

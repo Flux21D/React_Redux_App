@@ -1,0 +1,48 @@
+#references {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  z-index: 8;
+
+  .close-references {
+    position: absolute;
+    right: 26px;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .references-title {
+    .text-center();
+
+    img {
+      width: 25px;
+      position: relative;
+      top: -5px;
+      right: 10px;
+    }
+  }
+
+  ul.references-list {
+    max-width: 900px;
+    margin: 60px auto 0;
+    list-style: decimal;
+    font-size: 12px;
+    line-height: 20px;
+    color: @grey;
+
+    li {
+      padding-left: 10px;
+
+      + li {
+        margin-top: 15px;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,106 @@
+#settings {
+
+  background: #c6cbd0;
+  height: 100%;
+  padding: 26px;
+
+  .settings-container {
+    display: table;
+    max-width: 1086px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+#profile, #challenges {
+  display: table-cell;
+  background: @white;
+  padding: 0 26px 32px;
+}
+
+#profile {
+  width: 320px;
+
+  .wrp-profile-pic {
+    text-align: center;
+    margin-top: 26px;
+
+    img {
+      width: 134px;
+      height: 134px;
+    }
+  }
+
+  .user-info-box {
+    display: table;
+    width: 100%;
+    margin-top: 26px;
+    border-spacing: 20px 10px;
+  }
+
+  .user-info-box-row {
+    display: table-row;
+  }
+
+  .user-info-box-cell {
+    display: table-cell;
+    width: 50%;
+    text-align: right;
+    color: #84909a;
+
+    + .user-info-box-cell {
+      text-align: left;
+    }
+
+    &.user-info-box-val {
+      color: #425464;
+    }
+  }
+
+  .wrp-edit-profile {
+    text-align: center;
+    .btn {
+      width: 200px;
+    }
+  }
+}
+
+#challenges {
+  border-left: 20px solid #c6cbd0;
+  position: relative;
+
+  .slides-list {
+    width: 100%;
+  }
+
+  .slides-list-item {
+    border-bottom: 1px solid #f2f4f5;
+
+    td {
+      padding: 10px 0;
+    }
+
+  }
+
+  .slide-title {
+    width: 93px;
+    font-family: 'Apex New Medium';
+    color: @grey;
+  }
+
+  .slide-description {
+    font-family: 'Apex New Book';
+    color: @grey;
+    padding: 5px;
+  }
+
+  .slide-actions {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+#edit-profile {
+  margin-top: 26px;
+}

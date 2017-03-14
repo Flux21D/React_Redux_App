@@ -1,0 +1,154 @@
+#quiz {
+
+  height: 100%;
+  overflow-y: scroll;
+
+  h4 {
+    line-height: 24px;
+  }
+
+  .next-quiz-container {
+    text-align: center;
+
+    .btn {
+      width: 250px;
+    }
+  }
+
+  .answer-list {
+    list-style: none;
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+
+    .answer-list-item {
+
+      + .answer-list-item {
+        margin-top: 10px;
+      }
+
+      .correct-info, .incorrect-info {
+        margin: 15px;
+        display: none;
+      }
+
+      &.correct {
+        .answer {
+          border: 1px solid @green;
+          color: @green;
+
+
+          .answer-key {
+            &:after {
+              background: @green;
+            }
+          }
+
+        }
+
+        .correct-info {
+          display: block;
+          color: @green;
+        }
+      }
+
+      &.incorrect {
+        .answer {
+          border: 1px solid @red;
+          color: @red;
+
+          .answer-key {
+            &:after {
+              background: @red;
+            }
+          }
+        }
+
+        span {
+          &:after {
+            background: @red;
+          }
+        }
+
+        .incorrect-info {
+          display: block;
+          color: @red;
+        }
+      }
+
+      .answer {
+        border: 1px solid @orange;
+        color: @orange;
+        border-radius: 20px;
+        min-height: 40px;
+        cursor: pointer;
+        display: table;
+        width: 100%;
+
+        .answer-key, .answer-text {
+          display: table-cell;
+        }
+
+        .answer-key {
+          font: 18px/1 'Apex New Bold';
+          line-height: inherit;
+          padding: 0 20px;
+          margin-right: 10px;
+          position: relative;
+          vertical-align: middle;
+          width: 50px;
+
+          &:after {
+            content: ' ';
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            right: 1px;
+            width: 1px;
+            background: @orange;
+          }
+        }
+
+        .answer-text {
+          padding: 10px;
+        }
+
+      }
+    }
+
+  }
+
+}
+
+.quiz-progress-container {
+  margin: 26px auto 0;
+  .flex();
+  justify-content: space-between;
+  max-width: 350px;
+  width: 100%;
+
+  > div {
+    margin: 0 1px;
+    height: 5px;
+    width: 100%;
+    background-color: @orange;
+
+    + div {
+
+    }
+
+    &.active {
+      ~ div {
+        background-color: @grey-light;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: @screen-lg) {
+  #quiz {
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,12 @@
+AUTH_REQUIRED=false
+CF_CALLBACK_URL = http://<yourappname>.herokyapp.com/auth/callback
+CF_CLIENT_ID = client id
+CF_CLIENT_SECRET= client secret
+SESSION_SECRET = this can be a randomly generated value
+LOG_LEVEL = combined
+NEW_RELIC_LICENSE_KEY = New Relic License Key
+NEW_RELIC_LOG = stdout
+REDIS_URL = Redis URL
+SF_AUTHORIZE_URL = https://gso.my.salesforce.com/services/oauth2/authorize
+SF_TOKEN_URL = https://gso.my.salesforce.com/services/oauth2/token
+NODE_ENV=development

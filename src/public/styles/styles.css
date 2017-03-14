@@ -1,0 +1,917 @@
+/*** MODULE 01 STARTS ***/
+#epd{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;	
+}
+@media screen and (max-width: 1237px) and (min-width: 1201px) {
+	.summary .chart-content{
+	top:78px;
+	padding: 0 26px;
+	}
+}
+#video .video-script-container{
+	background:none;
+}
+
+/*** MODULE 01 ENDS ***/
+
+/*** MODULE 02 STARTS ***/
+
+/*OLUSD-192*/
+.hotspot.active .hotspot-circle{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+
+
+/*OLUSD-OLUSD-161*/
+@media all and (min-width: 1024px) and (max-width: 1059px) { 
+.hotspot.active .hotspot-circle{top: 4px;}
+
+}
+@media all and (min-width: 1060px) and (max-width: 1200px) { 
+.hotspot.active .hotspot-circle{top: 10px;left:4px;}
+
+}
+
+/*OLUSD-157*/
+@media all and (min-width: 768px) and (max-width: 1200px) { 
+.head-to-head-dialog{width:91%;max-width: 984px;}
+.my-modal .my-modal-dialog{margin-top:45px;}
+}
+
+@media all and (min-width: 1025px) and (max-width: 1200px) { 
+.head-to-head-dialog .desc{width: 281px;}
+}
+
+
+/*OLUSD-194*/
+
+@media all and (min-width : 992px) and (max-width: 1024px) {
+.summary .chart-content{padding:0 15px;}
+.summary .summary-list-item{padding:22px;padding-bottom:32px;margin-bottom:18px;}
+.summary-list .summary-list-item p{margin-bottom:24px;}
+    }
+
+/*OLUSD-170*/
+@media all and (min-width : 2500px){
+.summary .chart-content{width: 34%;top: 126px;}
+.summary .summary-list-item{width: calc(40.333% - 20px);}
+.summary .chart-content{padding-left:19px;}
+
+}
+
+/*** MODULE 02 ENDS ***/
+
+/*** MODULE 03 STARTS ***/
+
+/** OLUSD-115 - Reference font size specs **/
+#references ul.references-list li + li{ margin-top: 0;}
+
+#references ul.references-list li{
+	padding-left: 10px;
+    font-size: 18px;
+    line-height: 48px;
+    margin-top: 0;
+}
+
+
+/** Intro slide header font size specs **/
+.intro .chart-container .chart-header .title{
+	font: 36px/1 "Apex New Light";
+	line-height: 44px;
+    margin-top: 30px;
+}
+
+
+/** OLUSD-130 - Next and prev button styles **/
+/*#slider .slide-container .right-side .arrow-buttons-container .btn{
+    min-width: 205px;
+    padding: 8px 18px;
+	font-size: 14px;
+    letter-spacing: 3px;
+}
+*/
+/*.btn.btn-previous:after, .btn.btn-next:after{
+	width: 32px;
+    height: 20px;
+	/*top: 14px;*/
+/*}*/
+
+/*.btn.btn-next:after{ right: 10px;}
+.btn.btn-previous:after { left: 10px;}
+*/
+/*.btn .btn-transparent .btn-previous{
+	top:14px;
+}*/
+
+/** Global button styles **/
+.btn.btn-blue{
+	font-size:14px;
+	line-height: 28px;
+	padding: 10px 18px;
+	top:14px;
+}
+.btn.btn-blue:after{
+	right:0px !important;
+	top:14px;
+}
+
+/** OLUSD-151 - Cookie button styles **/
+#cookie .wrp-close-btn .btn{
+	border: 1px solid #fff;
+    color: #fff;
+	width: 205px;
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 3px;
+    padding: 6px 18px;
+}
+
+#home ul.home-nav li .bottom-icon img{
+	max-height: 40px;
+	max-width: 41px;
+}
+
+#home ul.home-nav li .bottom-icon{
+	max-height: 40px;
+	margin-bottom: 20px;
+	height: 40px;
+}
+
+#home ul.home-nav li .nav-text{
+	font-size: 16px;
+	line-height: 26px;
+}
+#home ul.home-nav li.active{
+	position: relative;
+}
+
+#home ul.home-nav li.active .info{
+	position: absolute;
+    top: 0%;
+    left: 0;
+    padding: 70px 35px 35px;
+    right: 0;
+}
+
+#home ul.home-nav li .info h3{
+	font-size: 30px;
+	line-height: 36px;
+}
+
+#home ul.home-nav li.active .info .info-icon-container{ margin-bottom: 50px;}
+
+
+/** OLUSD-130 - Next and prev button styles **/
+.arrow-buttons-container a.btn.btn-orange.btn-next, .arrow-buttons-container a.btn.btn-previous{
+    min-width: 205px !important;
+    padding: 8px 18px;
+                font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.arrow-buttons-container a.btn.btn-orange.btn-next:after, .arrow-buttons-container a.btn.btn-previous:after
+{              
+    top: 15px;
+}
+
+.arrow-buttons-container a.btn.btn-orange.btn-next:after{ right: 10px;}
+.arrow-buttons-container a.btn.btn-previous:after { left: 10px;}
+
+.arrow-buttons-container.intro-navigation a.btn.btn-orange.btn-next,
+.arrow-buttons-container.intro-navigation a.btn.btn-previous{
+    min-width: 164px;
+                padding: 0 18px;
+    font: 10px/32px "Apex New Bold";
+                letter-spacing: 0px;
+}
+
+.arrow-buttons-container.intro-navigation a.btn.btn-orange.btn-next:after, .arrow-buttons-container.intro-navigation a.btn.btn-previous
+{              
+    top: 8px;
+}
+
+.arrow-buttons-container.intro-navigation a.btn.btn-orange.btn-next:after{ right: 5px;}
+.arrow-buttons-container.intro-navigation a.btn.btn-previous:after { left: 5px;}
+
+
+
+/*** MODULE 03 ENDS ***/
+
+
+
+
+/*** MODULE 04 STARTS ***/
+
+/*106*/
+.chart-container .chart-content-container .intro{
+   
+    background:url("../img/introbg.jpg")no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*135*/
+.fixed-box .fix-box-inner .title{
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+/*137*/
+#login .wrp-remember{
+	font-size: 18px;
+	line-height: 30px;
+}
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"]{
+	margin-top: 8px;
+}
+#login .forgot-pass{
+	font-size: 18px;
+	line-height: 30px;
+}
+#login .register{
+	margin-top: 35px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+/*124*/
+#footer .footer-container {
+    padding: 5px 26px;
+}
+#footer .footer-logo{
+	font-size: 14px;
+	line-height: 30px;
+	font-family: "Apex New Book";
+}
+#footer .footer-nav-ul{
+	font-size: 14px;
+	line-height: 30px;
+	font-family: "Apex New Book";
+}
+
+/*127*/
+.treatment-paradigm .chart-description{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+/*119*/
+#index .quick-start {
+    width: 805px;
+}
+
+#index .quick-start .btn{
+	width: 340px;
+    height: 50px;
+    padding: 10px 0;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+#index .quick-start .btn img.arrow-right-3 {
+    width: 13px;
+    height: 21px;
+}
+#index .quick-start .btn img.arrow-right-1 {
+    width: 13px;
+    height: 21px;
+}
+
+/*117*/
+#index h1{
+	font-size: 96px;
+}
+/*119*/
+#index .quick-start{
+	width: 800px;
+}
+
+/*116*/
+#index p{
+	font-size: 36px;
+}
+
+@media all and (min-width:1600px){
+
+	#header .header-navbar > li > a, #header .header-navbar > li .logout{padding: 0 15px;}
+	#header .header-navbar >.toggle-sidebar-nav a { padding-right: 40px;}
+
+
+	/** OLUSD-132 - Intro slide body font size specs **/
+	.intro .chart-content p{
+		font: 24px/1 "Apex New Book";    
+		margin-bottom: 25px;
+		line-height: 28px;
+	}
+	
+	/** OLUSD-153 - Spacing CSS **/
+	.chart-container .chart-header .full-screen-btn{
+		right: 40px;
+	}
+	
+	.chart-container .chart-header, .chart-content, .chart-container .chart-header{
+		padding: 0 40px;
+	}
+	
+	#slider .slide-container .left-side, #slider .slide-container .right-side { padding: 40px;}
+	
+	#video{
+		top: 40px;
+		left: 40px;
+		right: 40px;
+		bottom: 40px;
+	}
+	
+	/** OLUSD-150 **/
+	#cookie .cookie-desc{
+		width: 700px;
+		font-size: 18px;
+		line-height: 30px;
+		margin: 0 auto 20px;
+	}
+	
+	#home ul.home-nav li .bottom-icon img{
+		max-height: 60px;
+    	max-width: 61px;
+	}
+	
+	#home ul.home-nav li .bottom-icon{
+		max-height: 60px;
+		margin-bottom: 30px;
+		height: 60px;
+	}
+	/*#home ul.home-nav li .bottom-icon*/
+	#home ul.home-nav li .nav-text{
+		font-size: 18px;
+		line-height: 28px;
+	}
+	
+	#home ul.home-nav li.active .info img{
+		max-height: 143px;
+	    max-width: 110px;
+	}
+	
+	#home ul.home-nav li .visit .visit-link{
+		font: 24px/30px "Apex New Bold";
+	    display: inline-block;
+	}
+	
+	#home ul.home-nav li .visit { margin-top: 30px;}
+	
+	#home ul.home-nav li .visit .visit-icon{
+		position: relative;
+		top: -10px;
+		display: inline-block;
+		width: 54px;
+		height: 54px;
+		border-radius: 50%;
+		border: 2px solid #f36c00;
+		margin-right: 15px;
+	}
+	
+	/** OLUSD-136 **/
+	#login .input-group-addon{
+		width: 50px;
+		padding: 6px 15px;
+		vertical-align: middle;
+	}
+	
+	#login input[type="email"], #login input[type="password"]{
+		min-height: 50px;
+		font-size: 18px;
+	}
+	
+	#login h3 { margin-bottom: 40px;}
+	
+	#login .input-group {
+		margin: 0 0 40px;
+	}
+	
+	.input-group + .input-group, #login .wrp-remember, #login .forgot-pass {
+		margin-top: 0;
+	}
+	
+	#login .wrp-buttons{
+		margin: 40px 0;
+	}
+	
+	/** OLUSD-152 **/
+	.patient-profile .circle-big > div, .patient-profile .circle > div{
+		font: 18px/30px "Apex New Book";
+	}
+
+
+	/*** MODULE 04 ***/
+	/*125*/
+	.chart-container .chart-header .title{
+		font-size: 36px;
+		line-height: 44px;
+	}
+
+	/*126*/
+	.chart-container .chart-header .description{
+		font-size: 18px;
+		line-height: 30px;
+	}	
+	.patient-profile .circle.circle-0{
+		top: 30px;
+	}
+	.patient-profile .circle > div{
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.patient-profile .circle.circle-1{
+		top:30px;
+	}
+	.patient-profile .circle-big > div{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	/*128*/
+	.btn.btn-blue{
+		padding: 8px 36px 8px 18px;
+	    font-size: 14px;
+	    letter-spacing: 3px;
+	}
+	.btn.btn-blue:after{
+		top:14px;
+	}
+	/*129*/
+	#video .video-script-container .video-script-title{
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 25px;
+	}
+
+	#video .video-script p{
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 45px;
+	}
+	.chart-container .chart-header .title{
+		padding-right: 45px;
+	}
+
+}
+
+
+/*** MODULE 04 ENDS ***/
+
+
+@media all and (max-width: 1024px){
+	/** OLUSD-179 - Intro tour popup CSS **/
+	.intro-slider .intro-chart .intro-content{
+		left: 50%;
+		bottom: auto;
+		transform: translate(-50%,0);
+		-webkit-transform: translate(-50%,0);
+		-moz-transform: translate(-50%,0);
+		-o-transform: translate(-50%,0);
+		box-shadow: 0 0 10px 3px rgba(0,0,0,0.6);
+		-webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,0.6);
+		-moz-box-shadow: 0 0 10px 3px rgba(0,0,0,0.6);
+		-o-box-shadow: 0 0 10px 3px rgba(0,0,0,0.6);
+		top: -30px;
+		z-index: 9;
+	}
+	
+	.intro .chart-content p{
+		font: 18px/1 "Apex New Book";
+		line-height: 22px;
+		margin-bottom: 20px;
+	}
+	
+	.intro-slider .intro-chart .intro-content:before{ display: none}
+	
+	#home ul.home-nav li .bottom-icon img{
+		max-height: 30px;
+		max-width: 31px;
+	}
+	
+	#home ul.home-nav li .bottom-icon{
+		max-height: 30px;
+		margin-bottom: 10px;
+		height: 30px;
+	}
+	
+	#home ul.home-nav li .nav-text{
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+
+	/*** module03 11/3/2017 ***/
+
+	/** OLUSD-194 **/
+	.benefit-risk-profile .benefits-list-item{
+	    padding: 40px;
+	}
+	
+	.benefit-risk-profile .chart-content{ bottom: 96px;}
+	
+	.benefit-risk-profile .btn-container { bottom: -65px;}
+	
+	.disease-activity { margin-top: 35px;}
+	
+	.disease-activity #keys > div{
+		font-size: 14px;
+		line-height: 36px;
+		margin-bottom: 0px;
+	}
+	
+	.disease-activity .placebo p, .adalimumab p{
+		font-size: 14px;
+		line-height: 26px;
+		margin-bottom: 0;
+	}	
+
+}
+
+/*** MODULE 04 ***/
+@media all and (max-width:991px){
+	/*119*/
+	#index .quick-start{
+		width: 700px;
+	}	
+	/*116*/
+	#index h1 {
+	    font-size: 60px;
+	}
+	#index p {
+	    font-size: 24px;
+	}
+}
+
+/*** MODULE 03 ***/
+@media all and (max-width: 768px){
+	.benefit-risk-profile .benefits-list-item{
+	    padding: 15px;
+	}
+}
+
+
+/** CSS hacks for IE **/
+_:-ms-input-placeholder, :root #glossary .glossary-content{ 
+	max-height: inherit;
+}
+
+_:-ms-input-placeholder, :root #glossary .words-list { 
+	overflow-y: visible;
+}
+
+_:-ms-input-placeholder, :root #index .logo-container{ 
+	position: relative;
+	margin-top: 5%;
+}
+
+_:-ms-input-placeholder, :root .chart-expanded .exit-full-screen img{ 
+	height: 20px;
+	width: auto;
+}
+
+_:-ms-input-placeholder, :root .benefit-risk-profile .benefits-list{ 
+	display: block;
+}
+
+_:-ms-input-placeholder, :root .benefit-risk-profile .benefits-list-item{ 
+	width: 31%; 
+	margin: 0 1%; 
+	display: inline-block;
+}
+
+_:-ms-input-placeholder, :root .summary .summary-list{ 
+	display: block;
+}
+
+_:-ms-input-placeholder, :root .summary .summary-list-item{ 
+	width: 31%;
+	float: left;
+	min-height: 140px;
+}
+
+_:-ms-input-placeholder, :root #video .video-container{ 
+	display: block;
+	bottom: auto;
+}
+
+
+/** Safari Hacks **/
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 1024px) {
+     ::i-block-chrome, #slider .slide-container .right-side .arrow-buttons-container .btn{
+        min-width: 110px;
+    }
+	
+	::i-block-chrome, .buttons-progress-container{
+		width: 80%;
+	}
+	
+	::i-block-chrome, #video .video-thumbnail{
+		min-height: 270px;
+	}
+	
+	::i-block-chrome, .chart-container:after{
+		padding-top: calc(100vh - 105px);
+	}	
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 768px) {
+	::i-block-chrome, .buttons-progress-container{
+		width: 70%;
+	}
+}
+
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+	/* your css rules for ipad portrait */
+	_::-webkit-full-page-media, _:future, :root .buttons-progress-container {
+		width: 70%;
+	} 
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+	/* your css rules for ipad landscape */
+	_::-webkit-full-page-media, _:future, :root #slider .slide-container .right-side .arrow-buttons-container .btn {
+		min-width: 110px; 
+	} 
+	
+	_::-webkit-full-page-media, _:future, :root .buttons-progress-container {
+		width: 80%; 
+	}
+	
+	_::-webkit-full-page-media, _:future, :root #video .video-thumbnail {
+		min-height: 270px;
+	}
+	
+	_::-webkit-full-page-media, _:future, :root .chart-container:after {
+		padding-top: calc(100vh - 105px);
+	}
+}
+
+/** Firefox hacks **/
+@-moz-document url-prefix() { 
+  #home ul.home-nav {
+     position: absolute;
+	 bottom: 0;
+  }
+}
+
+.chart-expanded .exit-full-screen{
+	right: 0;
+}
+
+@media screen and (max-width: 1237px) and (min-width: 1201px) {
+	.summary .chart-content{
+	top:78px;
+	padding: 0 26px;
+	}
+}
+#video .video-script-container{
+	background:none;
+}
+@media all and (min-width:1600px){
+     #header .header-navbar > li > a, #header .header-navbar > li .logout{padding: 0 15px;}
+	#header .header-navbar >.toggle-sidebar-nav a { padding-right: 40px;}
+}
+@media all and (min-width:1200px) and (max-width:1600px){
+/*  .my-modal .my-modal-content {
+    position: absolute;
+    padding: 100px 200px;
+}*/
+}	
+
+@media all and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+    .chart-container .chart-header .description {
+	    font: 18px/36px "Apex New Book";
+	    color: #425464;
+	}
+	.treatment-paradigm .chart-description {
+	    font: 18px "Apex New Book";
+	    line-height: 1.667;
+
+	}
+	.btn {
+	    letter-spacing: 3px;
+	  }
+	  .benefit-risk-profile .benefits-list-item {
+	    /* width: 33.3333%; */
+	    width: 300px;
+	    height: 435px;
+	    padding:56px 40px 70px 37px;
+	    position: relative;
+	}
+	.benefit-risk-profile .benefits-list-item p {
+	    font-size: 20px;
+	    line-height: 1.667;
+	    margin-bottom: 0px;
+	    margin-top: 40px;
+	}
+	.chart-container {
+		background-image:none;
+	}
+	.chart-desciption-list{
+	 font-size:14px;
+	 line-height: 1.714; 
+	 letter-spacing: 0.2px;
+	}
+	.chart-content ul{
+		margin-top: 10px;
+	    margin-bottom: 17px;
+	}
+	.chart-container .chart-header .title {
+	    font: 24px "Apex New Light";
+	    line-height: 1.25;
+	    color: #f36c00;
+	}
+	#keys {
+	    max-width: 285px;
+	    display: inline-block;
+	    position: absolute;
+	    right: 0;
+	    top: 50px;
+		font-size:15px;
+		letter-spacing:0.5px;
+	}
+	#keys .placebo p{
+	    font-size:15px; 	
+	}
+	#keys .adalimumab p{
+	    font-size:15px;
+	}
+	#keys > div {
+	    margin-bottom: 15px;
+	}
+	.chart-container .chart-header .full-screen-btn {
+	    position: absolute;
+	    cursor: pointer;
+	}
+	.chart-container .chart-header .full-screen-btn img {
+	    width: 20px;
+	    height: 20px;
+	}
+}
+.video-script-container{
+	font-size: 18px;
+    line-height: 30px;
+}
+.video-script-containe:last-child{
+	margin-bottom: 0;
+}
+#video .video-script-container{
+	height:645px; /*height set*/
+	overflow-y:auto;
+}
+
+
+/*video overlay*/
+#video .video-cover-container {
+    position: absolute;
+    width: 100%;
+    height: 97%;
+    background: rgba(243, 108, 0, 0.7);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+_:-ms-input-placeholder, :root .chart-expanded .exit-full-screen{
+	right:-10px;
+}
+#video .video-cover-container {
+    position: absolute;
+    width: 100%;
+    height: 97%;
+    background: rgba(243, 108, 0, 0.7);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.intro-content a.btn.btn-previous{min-width: 100px !important;top:0px !important;}
+.intro-content a.btn.btn-previous:after{top: 7px !important;}
+.intro-slider .intro-navigation .intro-content a.btn.btn-next{min-width: 100px !important;}
+
+/*ipad landscape issue fix starts*/
+@media all and (max-width: 1024px){
+#footer .footer-nav{display:block;}
+.arrow-buttons-container a.btn.btn-orange.btn-next, .arrow-buttons-container a.btn.btn-previous{min-width: 198px !important;}
+.buttons-progress-container{padding: 0 65px;margin-left:20px;}
+.arrow-buttons-container a.btn.btn-orange.btn-next{position: relative;right:40px;}
+/*box btns fix*/
+.summary .summary-list-item .btn-container .btn{padding-top: 5px;padding-bottom: 5px;}
+.summary .chart-content{bottom: 8px;}
+}
+
+/*ipad portrait issue fix starts*/
+@media all and (max-width: 768px){
+#footer .footer-nav{display:block;float:left !important;padding-left: 50px;}
+.arrow-buttons-container a.btn.btn-orange.btn-next, .arrow-buttons-container a.btn.btn-previous{min-width: 198px !important;}
+.buttons-progress-container{padding: 0 60px;padding-left:30px;margin-left:40px;}
+.arrow-buttons-container a.btn.btn-orange.btn-next{position: relative;right:30px;}
+.arrow-buttons-container a.btn.btn-orange.btn-next, .arrow-buttons-container a.btn.btn-previous{min-width: 158px !important;}
+.summary .chart-content{bottom: 60px;}
+.summary .summary-list-item{margin-bottom: 37px;}
+ul.summary-list li.summary-list-item:nth-child(1) .btn-container{margin-top:39px;}
+ul.summary-list li.summary-list-item:nth-child(3) .btn-container{margin-top:39px;}
+ul.summary-list li.summary-list-item:nth-child(5) .btn-container{margin-top:69px;}
+}
+/*ipad portrait issue fix ends*/
+
+/*tablet page table issues*/
+@media screen and (min-width: 1600px){
+.once-daily-tablet .mg4-title {font-size: 36px;}
+.once-daily-tablet .mg2-desc-list {font-size: 18px;}
+.once-daily-tablet .mg2-desc-list li:nth-child(1) {margin-bottom:36px;}
+.once-daily-tablet .mg2-desc-list {line-height: 23px;}
+.once-daily-tablet .actual-size {font-size: 14px;}
+.once-daily-tablet table tr:nth-child(3),.once-daily-tablet table tr:nth-child(4){vertical-align: top;}
+.once-daily-tablet .actual-size{position:relative;top:-30px;}
+@-moz-document url-prefix() {
+   .once-daily-tablet .actual-size{position:relative;top:-50px;}
+
+}
+
+}
+/*guided tour 9 fix*/
+#video .intro-challenge .video-player{
+	z-index: 11;
+}
+ #video .intro-challenge {
+	z-index: 11;
+}
+
+/*** guided tour 2 fix ***/
+#video .video-container .intro-video-script .video-script.text-orange{
+    overflow-y:auto !important;
+    height: 420px;
+}
+.video-script-container.intro-video-script{
+    background-color: #ffffff !important;
+}
+#contact-us .contacts-us-title{
+	background:url("../img/mail-icon.png")no-repeat;
+	background-position: 0px 0px;
+	background-size: 48px 39px;
+}
+#contact-us .contacts-us-title img{
+	display: none;
+}
+#contact-us .contact-container{
+	font-family: Apex New Book;
+	font-size: 18px;
+}
+
+/*57 contact us*/
+
+#contact-us{
+	padding-top: 78px;
+}
+#contact-us .contact-container{
+	  margin-bottom: 40px;
+}
+#contact-us .contacts-us-title{
+     background: url(../img/mail-icon.png)no-repeat; 
+    background-position: 0px 0px;
+    background-size: 48px 39px;
+    width: 400px;
+    padding-left: 83px;
+    height: 39px;
+    margin-bottom: 113px !important;
+    line-height: 39px;
+
+}
+#contact-us .contacts-us-title img{
+	display: none;
+}
+
+#contact-us .contact-container{
+	font-family: Apex New Book;
+	font-size: 18px;
+}
+
+/*references*/
+#references{
+	z-index: 10;
+}
+
+@media all and (max-width: 1024px){
+#sidebarNavigation nav ul.sidebar-nav li:nth-child(12){display: none}
+.mechanism-of-action .chart-content .chart-image .hotspot{display: none}
+.rapid-and-sustained .chart-content .chart-image .hotspot{display: none}  
+
+}
+
+
+/*** CSS ENDS ***/

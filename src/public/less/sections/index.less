@@ -1,0 +1,143 @@
+.index-container {
+  width: 100%;
+  height: auto !important;
+  .flex();
+  justify-content: center;
+  align-items: center;
+}
+
+#index {
+  vertical-align: middle;
+  padding: 60px 0;
+
+  p {
+    font: 24px "Apex New Light";
+    color: @white;
+  }
+
+  h1 {
+    font: 64px "Apex New Light";
+    color: @white;
+  }
+
+  .dmard {
+    margin-top: 26px;
+  }
+
+  .choose-experience {
+    margin-top: 26px;
+  }
+
+  .quick-start {
+    width: 533px;
+    margin: 24px auto 0;
+
+    .btn {
+      width: 226px;
+
+      img {
+        position: relative;
+        left: 10px;
+        height: 15px;
+
+        &.arrow-right-1 {
+          width: 25px;
+        }
+
+        &.arrow-right-3 {
+          width: 25px;
+        }
+      }
+
+    }
+  }
+}
+
+.index-modal-box {
+  width: 536px;
+  text-align: center;
+
+  h3.title {
+    color: @orange;
+  }
+
+  p.description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .thumbnail-container {
+    margin-top: 10px;
+    position: relative;
+
+    img {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+
+}
+
+.resume-box {
+
+  .thumbnail-container {
+    img {
+      max-width: 300px;
+    }
+
+    .thumbnail-content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 30px;
+
+      h3  {
+        color: #ffffff;
+        font: 24px/1 "Apex New Light";
+      }
+
+      .btn {
+        width: 135px;
+      }
+    }
+  }
+
+  .resume-buttons-container {
+    max-width: 300px;
+    margin: 26px auto;
+    padding-top: 26px;
+
+    border-top: 1px solid #d9dce0;
+
+    .btn {
+      width: 135px;
+    }
+
+  }
+
+}
+
+.welcome-box {
+
+  .welcome-buttons-container {
+    .clearfix();
+    width: 300px;
+    margin: 25px auto 0;
+
+    > div {
+      float: left;
+
+      + div {
+        margin-left: 26px;
+      }
+
+    }
+
+  }
+
+  .btn-intro {
+    width: 136px;
+  }
+}

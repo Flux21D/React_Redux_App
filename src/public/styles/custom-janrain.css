@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* Custom CSS Document for Janrain*/
+
+
+@font-face {
+  font-family: 'ApexNew-Book';
+  src: url('../fonts/Apex/ApexNew-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/Apex/ApexNew-Book.otf')  format('opentype'),
+	     url('../fonts/Apex/ApexNew-Book.woff') format('woff'), url('../fonts/Apex/ApexNew-Book.ttf')  format('truetype'), url('../fonts/Apex/ApexNew-Book.svg#ApexNew-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{
+	background: transparent !important;
+	font-family: 'ApexNew-Book' !important;
+}
+/** Login popup CSS **/
+#signIn{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+    width: 25%;	
+	display: none !important;
+    z-index: 99;
+    background: #fff;
+    padding: 2%;
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#signIn.show{ display: block !important;}
+
+.signin-title { border-bottom: 0 none !important; margin-bottom: 0 !important;}
+
+.signin-title h1{
+	display: block !important;
+	text-align: center;
+	font-family: 'Apex New Book';
+	color: #f36c00 !important;
+	margin-top: 25px;
+	margin-bottom: 12px;
+	font-size: 24px;
+}
+
+#signIn .capture_email label, #signIn .capture_password label{
+	display: none;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select{
+	display: block !important;
+    width: 100% !important;
+    height: 31px !important;
+    padding: 6px 12px !important;
+	font-family: 'Apex New Book' !important;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    color: #555555 !important;
+    background-color: #fff !important;
+    background-image: none !important;
+    border: 1px solid #c6cbd0 !important;
+    border-radius: 0px !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+}
+
+.forgotpwd{ text-align: right;}
+	
+#signIn #forgotpwd-link{
+	color: #f36c00 !important;
+	text-decoration: none;
+}
+
+#login-overlay{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.7);
+	display: none;
+}
+
+#login-overlay.show{
+	display: block;
+}
+
+.capture_traditionalSignIn_signInButton, .capture_forgotPassword_sendButton, #capture_editProfile_saveButton,
+#capture_changePassword_saveButton, .capture_createAccountButton{
+	color: #ffffff !important;
+    background: #f36c00 !important;
+    border: 1px solid #f36c00 !important;
+	display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;   
+    white-space: nowrap;    
+    font-size: 14px;
+    line-height: 1.42857143;    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	border-radius: 0 !important;
+    padding: 0 18px;
+    font: 10px/32px "Apex New Book";
+    text-transform: uppercase;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	text-shadow:none !important;
+}
+
+#returnTraditional .capture_header h1{  
+  position: relative;
+  top: 120px;
+  text-align: center;
+  left: 45%;
+}
+
+#close-btn{
+    position: fixed;
+    left: 92%;
+    top: 1%;
+    width: 25%;
+    z-index: 99;
+    color: #888;
+    cursor: pointer;
+}
+
+#return_close-btn{
+    position: fixed;
+    left: 69%;
+    top: 21%;
+    width: 25%;
+    z-index: 99;
+    color: #888;
+    cursor: pointer;
+}
+
+.capture_footer{
+	background-color:transparent !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	height: auto !important;
+	position: relative !important;
+}
+
+.capture_footer .capture_btn{ margin: 0 !important;}
+
+#signIn .capture_footer{ padding: 0 0 10px !important;}
+
+/** Register panel styles **/
+.object-container{
+	padding-bottom: 0.25%;
+}
+
+.object-container object{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#reg-close-btn{ 
+	display: none;
+	position: fixed;
+	right: 3%;
+	top:1%;
+	color:#888;
+	z-index: 9999;
+	cursor: pointer;
+}
+
+#reg-close-btn.show{ display: block;}
+	
+#register-panel{ 
+	margin: 30px auto;
+	display: none;
+	position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    width: 50%;
+    display: none !important;
+    z-index: 99;
+    background: #fff;
+    padding: 2%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#register-panel.show{ display: block !important;}
+
+.col-2 .col{
+	width: 50%;
+	float: left;
+	padding: 2%;
+}
+
+.col-2:after{
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+#traditionalRegistration p{ display: none;}
+
+#traditionalRegistration .capture_header, .capture_form_item_termsAndCondition_contactConsent, .contact-text{ padding: 0 2%;}
+
+#capture_traditionalRegistration_form_item_inner_termsAndCondition_termsAndConditions br{ display: none;}
+
+#capture_traditionalRegistration_termsAndCondition_termsAndConditions{
+	top: 11px !important;
+	margin-top: 0 !important;
+}
+
+/** Forgot password form **/
+.capture_forgotPasswordForm label { display: none !important;}
+
+#forgotPassword h1, .capture_header h1{
+	text-align: center;
+    font-family: 'Apex New Book';
+    color: #f36c00 !important;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    display: block;
+}
+
+.capture_header{
+	border-bottom: 0 none !important;
+	margin-bottom: 0 !important;
+}
+
+#forgotPassword{
+	min-height: inherit !important;	
+    padding: 5% !important;
+	border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+}
+
+#forgotPassword .capture_footer{
+	position: relative !important;
+	background: none !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	height: auto !important;
+}
+
+#forgotPassword .capture_footer .capture_btn{ margin: 0 !important;}
+
+.capture_backButton, #back-btn{
+	background: #ffffff !important;
+    color: #425464 !important;
+    border: 1px solid #425464 !important;
+	text-shadow:none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+#back-btn{
+    padding: 10px;
+	text-decoration: none !important;
+	display: inline-block;
+}
+
+.capture_footer:after{
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+#janrainModalOverlay
+{
+	opacity: 0.7 !important;
+}
+
+/** Edit profile page CSS **/
+#capture_editProfile_editProfileForm input[yupe="text"],
+#capture_editProfile_editProfileForm input[yupe="email"]{
+	font-family: 'Apex New Book';
+    font-size: 12px;
+    height: 31px;
+    border: 1px solid #c6cbd0;
+    border-radius: 0;
+}
+
+select{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background-position: right 50% !important;
+    background-repeat: no-repeat !important;
+    background-image: url(../img/download.png) !important;
+    padding: .5em !important;
+    padding-right: 1.5em !important;
+}
+
+.janrain-capture-ui#editProfile .capture_form_item label{
+	margin: 0 !important;
+}
+
+#editProfile h1{ 
+	text-align: center;
+	font-family: 'Apex New Book';
+	color: #f36c00 !important;
+}
+
+#editProfile h3{
+	font-family: 'Apex New Book';
+}
+
+/** Media Query **/
+@media all and (max-width: 1024px) and (min-width: 768px){
+	#signIn{
+		width: 45%;
+	}
+}
+@media all and (max-width: 767px){
+	/* #close-btn{
+		top: -30px;
+	    right: -30px;
+	}
+	
+	#close-btn img{ width: 30px; height: 30px;} */
+	
+	.col-2 .col, #traditionalRegistration{
+		width: auto;
+		float: none;
+	}
+	
+	#register-panel{
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		transform: translate(0,0);
+		-webkit-transform: translate(0,0);
+		-moz-transform: translate(0,0);
+		-o-transform: translate(0,0);
+		margin: 0 auto;
+	}
+	
+	#signIn { width: 80%;}
+	/*#signIn .janrain-capture-ui.janrain-capture-ui-mobile .capture_header{ border-bottom: 0 none !important;}*/
+	
+	#forgotPassword{ padding: 3% !important;}
+}
+
+@media all and (max-width: 767px) and (orientation: landscape){
+	/* #close-btn{ 
+		top: -20px;
+	    right: -26px;
+	}
+	
+	#close-btn img {
+		width: 25px;
+		height: 25px;
+	} */
+}
+

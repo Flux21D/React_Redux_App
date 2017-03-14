@@ -1,0 +1,54 @@
+#footer {
+
+  .clearfix();
+  background: #eceeef;
+
+  .footer-container {
+    padding: 0 26px;
+  }
+
+  .footer-logo {
+    line-height: 26px;
+    display: inline-block;
+    font-size: 12px;
+
+    .logo-lilly {
+      width: 27px;
+      height: 15px;
+      margin-right: 18px;
+    }
+  }
+
+  .footer-nav {
+    display: none;
+    .pull-right();
+  }
+
+  .footer-nav-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+
+    li {
+      display: inline-block;
+      line-height: 26px;
+
+      + li {
+        margin-left: 10px;
+      }
+
+      a {
+        color: @grey;
+      }
+    }
+  }
+
+
+  @media screen and (min-width: @screen-lg) {
+    .footer-nav {
+      display: block;
+    }
+  }
+
+}

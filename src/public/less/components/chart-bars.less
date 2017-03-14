@@ -1,0 +1,273 @@
+.bar-gradient (@color) {
+  background: @color;
+  background: -webkit-linear-gradient(top, rgba(red(@color), green(@color), blue(@color), 0), rgba(red(@color), green(@color), blue(@color), 1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, rgba(red(@color), green(@color), blue(@color), 0), rgba(red(@color), green(@color), blue(@color), 1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, rgba(red(@color), green(@color), blue(@color), 0), rgba(red(@color), green(@color), blue(@color), 1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, rgba(red(@color), green(@color), blue(@color), 0), rgba(red(@color), green(@color), blue(@color), 1)); /* Standard syntax (must be last) */
+}
+
+.joint-damage-protection {
+  .arrow-up-blue {
+    position: absolute;
+    left: 0;
+    height: 84%;
+    //bottom: 4.5%;
+    bottom: -90%;
+  }
+}
+
+.chart-bars-container {
+    position: absolute;
+
+    .bar {
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        font-size: 6px;
+        text-align: center;
+
+        height: 0;
+        overflow: hidden;
+
+        &.light-grey {
+          .bar-gradient(@light-grey);
+        }
+        &.orange {
+          .bar-gradient(@orange);
+        }
+        &.grey {
+          .bar-gradient(@grey);
+        }
+        &.blue {
+          .bar-gradient(@blue);
+        }
+        &.light-orange {
+          .bar-gradient(@light-orange);
+        }
+        span {
+          position: relative;
+          top: -20px;
+          color: @grey;
+        }
+
+    }
+
+    &.head-to-head-bars {
+      bottom: 10.8%;
+      left: 6.3%;
+      right: 0;
+      width: 58.5%;
+      height: 100%;
+
+      .graphHeadings {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 86%;
+        display: none;
+      }
+
+      .firstHeading {
+        position: absolute;
+        width: 10%;
+        top: 20%;
+        left: 4%;
+        display: none;
+      }
+
+      .secondHeading {
+        position: absolute;
+        width: 10%;
+        left: 40.5%;
+        top: 16%;
+        display: none;
+      }
+
+      .thirdHeading {
+        position: absolute;
+        width: 10%;
+        left: 73.3%;
+        top: 19%;
+        display: none;
+      }
+
+      .main_graph {
+        background: url("../img/charts/head-to-head/main_graph.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        max-height: 69%;
+        height: 0;
+        left: 13.6%;
+        width: 85%;
+      }
+
+      .bar {
+        width: 3%;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &.one1 {
+          max-height: 40%;
+          height: 0;
+          background-image: url("../img/charts/head-to-head/one1.png");
+          left: 2.3%;
+        }
+
+        &.one2 {
+          max-height: 61%;
+          height: 0;
+          background-image: url("../img/charts/head-to-head/one2.png");
+          left: 9.1%;
+        }
+
+        &.one3 {
+          max-height: 70%;
+          height: 0;
+          background-image: url("../img/charts/head-to-head/one3.png");
+          left: 5.8%;
+        }
+
+        &.two1 {
+          max-height: 37%;
+          height: 0;
+          background-image: url("../img/charts/head-to-head/two1.png");
+          left: 38.8%;
+        }
+
+        &.two2 {
+          max-height: 66%;
+          height: 0;
+          background-image: url("../img/charts/head-to-head/two2.png");
+          left: 45.8%;
+        }
+
+        &.two3 {
+          max-height: 74%;
+          height: 0;
+          background-image: url("../img/charts/head-to-head/two3.png");
+          left: 42.3%;
+        }
+
+        &.three1 {
+          max-height: 71%;
+          height: 0;
+          background-image: url("../img/charts/head-to-head/three1.png");
+          left: 75.3%;
+        }
+
+        &.three2 {
+          max-height: 62%;
+          height: 0;
+          background-image: url("../img/charts/head-to-head/three2.png");
+          left: 78.8%;
+        }
+
+      }
+    }
+
+    &.disease-activity-bars {
+      bottom: 11.3%;
+      left: 6.4%;
+      width: 59.5%;
+      height: 125%;
+
+      .week12 {
+        position: absolute;
+        width: 28.5%;
+        bottom: 0;
+        left: 3.5%;
+        max-height: 25.06%;
+        height: 0;
+      }
+
+      .week24 {
+        position: absolute;
+        width: 28.5%;
+        bottom: 0;
+        left: 40%;
+        max-height: 34.8%;
+        height: 0;
+      }
+
+      .week52 {
+        position: absolute;
+        width: 20.5%;
+        bottom: 0;
+        left: 76%;
+        max-height: 41.93%;
+        height: 0;
+      }
+
+    }
+
+    &.jdp-bars {
+      bottom: 5.2%;
+      left: 10.5%;
+      width: 47.7%;
+      height: 75%;
+
+      .week24 {
+        position: absolute;
+        width: 87%;
+        bottom: 0;
+        left: 6.5%;
+      }
+
+      .week52 {
+        position: absolute;
+        width: 88%;
+        bottom: 0;
+        left: 6.5%;
+      }
+    }
+
+  &.eat-bars {
+    bottom: 32.9%;
+    left: 5.9%;
+    width: 94.1%;
+    height: 58%;
+    overflow: hidden;
+
+    > div {
+      position: absolute;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .graphLines {
+      width: 21%;
+      position: absolute;
+      left: 28%;
+      top: 7%;
+      display: none;
+    }
+
+    .graph {
+      bottom: -100%;
+
+      &.first {
+        width: 20%;
+        left: 2.5%;
+      }
+
+      &.second {
+        width: 20%;
+        left: 27.5%;
+      }
+
+      &.third {
+        width: 20%;
+        left: 52.4%;
+      }
+
+      &.fourth {
+        width: 20%;
+        left: 77.5%;
+      }
+    }
+  }
+}

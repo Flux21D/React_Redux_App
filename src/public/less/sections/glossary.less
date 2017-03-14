@@ -1,0 +1,50 @@
+#glossary {
+  .glossary-content {
+    width: 546px;
+    margin: auto;
+    .flex();
+    flex-direction: column;
+    max-height: ~"calc(100vh - 60px - 26px)";
+    padding-top: 26px;
+  }
+
+  .glossary-title {
+    .text-center();
+  }
+
+  .alphabet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      color: @grey;
+      text-align: center;
+      font: 24px/40px "Apex New Light";
+      cursor: pointer;
+
+      &.active {
+        border-radius: 50%;
+        background-color: @grey;
+        color: #fff;
+      }
+    }
+  }
+
+  .words-list {
+    list-style: none;
+    padding: 0 13px;
+    margin: 26px 0 0;
+    overflow-y: scroll;
+
+    > li {
+      color: @grey;
+      font-family: "Apex New Book";
+      line-height: 32px;
+    }
+  }
+
+}

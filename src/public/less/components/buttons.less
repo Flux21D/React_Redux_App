@@ -1,0 +1,116 @@
+.btn {
+  border-radius: 0;
+  padding: 0 18px;
+  font: 10px/32px "Apex New Bold";
+  text-transform: uppercase;
+  border: none;
+
+  &.btn-rounded {
+    border-radius: 20px;
+  }
+
+  &.btn-border-orange {
+    color: @orange;
+    border: 1px solid @orange;
+  }
+
+  &.btn-transparent {
+    background-color: transparent;
+    border: 1px solid @grey;
+    color: @grey;
+
+    &.white {
+      border: 1px solid @white;
+      color: @white;
+    }
+  }
+
+  &.btn-white {
+    background: @white;
+    color: @grey;
+    border: 1px solid @grey;
+  }
+
+  &.btn-light-grey {
+    background: @white;
+    color: #cccccc;
+    border: 1px solid #e9e9e9;
+  }
+
+  &.btn-grey {
+    background: @grey;
+    color: #ffffff;
+  }
+
+  &.btn-border-white {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+
+  &.btn-orange {
+    color: #ffffff;
+    background: @orange;
+    border: 1px solid @orange;
+
+    &.active {
+      color: #cccccc;
+      border: 1px solid #e9e9e9;
+    }
+  }
+
+  &.btn-green {
+    color: #ffffff;
+    background: @green;
+  }
+
+  &.btn-blue {
+    color: #ffffff;
+    background: @blue;
+    border: 1px solid @blue;
+  }
+
+  &.btn-previous, &.btn-next {
+    position: relative;
+
+    &:after {
+      content: " ";
+      display: inline-block;
+      width: 28px;
+      height: 18px;
+
+      position: absolute;
+      top: 8px;
+
+      background-repeat: no-repeat;
+    }
+  }
+
+  &.btn-next {
+    padding-right: 36px;
+    &:after {
+      background-image: url("../svg/icons/arrow_white_right.svg");
+      right: 5px;
+    }
+
+    &.btn-transparent {
+      &:after {
+        background-image: url("../svg/icons/arrow_grey_right.svg");
+      }
+    }
+  }
+
+
+  &.btn-previous {
+    padding-left: 36px;
+    &:after {
+      background-image: url("../svg/icons/arrow_grey_left.svg");
+      left: 5px;
+    }
+  }
+
+  img {
+    height: 12px;
+    position: relative;
+    top: -1px;
+  }
+}

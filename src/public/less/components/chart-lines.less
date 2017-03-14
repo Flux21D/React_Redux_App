@@ -1,0 +1,326 @@
+.graph-line {
+  position: absolute;
+
+  .cover {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: white;
+  }
+
+  &.graph-acr20 {
+    left: 4.7%;
+    top: 12%;
+    bottom: 12%;
+    right: 49%;
+  }
+
+  &.graph-acr50 {
+    left: 4.9%;
+    top: 13.2%;
+    bottom: 11%;
+    right: 42.5%;
+
+    > img {
+      position: relative;
+      z-index: 3;
+    }
+
+    .cover {
+      z-index: 4;
+    }
+
+    .bar {
+      width: 3%;
+      height: 100%;
+      position: absolute;
+      left: 14%;
+      background: #eef0f1;
+      bottom: 0;
+      z-index: 2;
+      display: none;
+    }
+  }
+
+  &.graph-acr70 {
+    left: 4.9%;
+    top: 14%;
+    bottom: 12.6%;
+    right: 49%;
+
+    > img {
+      position: relative;
+      z-index: 3;
+    }
+
+    .cover {
+      z-index: 4;
+    }
+
+    .bar {
+      width: 3%;
+      height: 100%;
+      position: absolute;
+      left: 12.6%;
+      background: #eef0f1;
+      bottom: 0;
+      z-index: 2;
+      display: none;
+    }
+  }
+
+  &.graph-physician {
+    left: 7.4%;
+    top: 10%;
+    bottom: 11.1%;
+    right: 23.8%;
+
+    .cover {
+      background: transparent;
+      &:before {
+        content: ' ';
+        width: 50%;
+        position: absolute;
+        left: 0;
+        right: 50%;
+        bottom: 0;
+        top: 0;
+        background: #fff;
+      }
+      &:after {
+        content: ' ';
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        right: 100%;
+        bottom: 0;
+        top: 60%;
+        background: #fff;
+      }
+    }
+
+    .graph-img {
+      position: relative;
+      left: -1%;
+    }
+  }
+  &.graph-patient {
+    left: 7.4%;
+    top: 10%;
+    bottom: 11.2%;
+    right: 21.7%;
+
+    .cover {
+      background: transparent;
+      &:before {
+        content: ' ';
+        width: 50%;
+        position: absolute;
+        left: 0;
+        right: 50%;
+        bottom: 0;
+        top: 0;
+        background: #fff;
+      }
+      &:after {
+        content: ' ';
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        right: 100%;
+        bottom: 0;
+        top: 60%;
+        background: #fff;
+      }
+    }
+
+    .graph-img {
+      position: relative;
+      left: -1%;
+    }
+  }
+  &.pain {
+    left: 7.48%;
+    top: 10%;
+    bottom: 11.4%;
+    right: 23.9%;
+
+    .cover {
+      background: transparent;
+      &:before {
+        content: ' ';
+        width: 50%;
+        position: absolute;
+        left: 0;
+        right: 50%;
+        bottom: 0;
+        top: 0;
+        background: #fff;
+      }
+      &:after {
+        content: ' ';
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        right: 100%;
+        bottom: 0;
+        top: 60%;
+        background: #fff;
+      }
+    }
+
+    .graph-img {
+      position: relative;
+      left: -1%;
+    }
+  }
+  &.function {
+    left: 7.3%;
+    top: 10%;
+    bottom: 11.4%;
+    right: 23.9%;
+
+    .cover {
+      background: transparent;
+      &:before {
+        content: ' ';
+        width: 50%;
+        position: absolute;
+        left: 0;
+        right: 50%;
+        bottom: 0;
+        top: 0;
+        background: #fff;
+      }
+      &:after {
+        content: ' ';
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        right: 100%;
+        bottom: 0;
+        top: 60%;
+        background: #fff;
+      }
+    }
+
+    .graph-img {
+      position: relative;
+      left: -1%;
+    }
+  }
+
+  &.fatigue {
+    left: 6.48%;
+    top: 15.8%;
+    bottom: 10.7%;
+    right: 34%;
+  }
+
+}
+
+.mechanism-of-action {
+
+  .left-recptor {
+    position: absolute;
+    left: 21.5%;
+    top: 50.5%;
+    width: 3.5%;
+    display: none;
+  }
+
+  .right-recptor {
+    position: absolute;
+    left: 34%;
+    top: 50.5%;
+    width: 3.5%;
+    display: none;
+  }
+
+  .jak1 {
+    display: inline-block;
+    position: absolute;
+    top: 53%;
+    left: 10%;
+    width: 12%;
+  }
+
+  .jakarrow {
+    display: inline-block;
+    position: absolute;
+    top: 65%;
+    left: 19%;
+    width: 0;
+  }
+
+  .dotzoom {
+    display: inline-block;
+    position: absolute;
+    top: 68%;
+    left: 37%;
+    width: 0;
+  }
+
+  .jak2 {
+    display: inline-block;
+    position: absolute;
+    top: 53%;
+    left: 37%;
+    width: 12%;
+  }
+
+  .jak3 {
+    display: inline-block;
+    position: absolute;
+    top: 56%;
+    left: 64%;
+    width: 14%;
+  }
+
+  .tyk2 {
+    display: inline-block;
+    position: absolute;
+    top: 78%;
+    left: 70%;
+    width: 14%;
+  }
+
+  .dot {
+    position: absolute;
+    width: 4%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    &.maroon {
+      left: 48%;
+      top: 4%;
+    }
+    &.brown {
+      top: 10%;
+      left: 37%;
+    }
+    &.red {
+      top: 19%;
+      left: 25%;
+    }
+    &.dark-red {
+      top: 5%;
+      left: 15%;
+    }
+    &.orange1 {
+      display: none;
+      top: 23%;
+      left: -3%;
+    }
+
+    &.orange2 {
+      display: none;
+      top: 23%;
+      left: 64%;
+    }
+  }
+
+}

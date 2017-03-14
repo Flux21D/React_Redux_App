@@ -1,0 +1,97 @@
+#error {
+
+    padding: 10px 0;
+    background: #f5f6f7;
+    height: 100%;
+
+    .error-500 {
+        .robot-image-container {
+            text-align: center;
+
+            img {
+                width: 250px;
+            }
+        }
+
+        .error-content {
+            text-align: center;
+
+            h1 {
+                font: 48px/1 "Apex New Light";
+            }
+
+            p {
+                font: 24px/48px "Apex New Light";
+            }
+        }
+    }
+
+    .error-404 {
+        margin: 200px auto;
+        display: table;
+        width: 100%;
+
+        .chain-left, .chain-right {
+            position: relative;
+            display: table-cell;
+            height: 138px;
+
+            &:before {
+                content: " ";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                left: 0;
+                bottom: -100px;
+                -webkit-box-shadow: 20px 10px 20px 0px rgba(0, 0, 0, 0.3);
+                -moz-box-shadow: 20px 10px 20px 0px rgba(0, 0, 0, 0.3);
+                box-shadow: 20px 10px 20px 0px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .chain-left {
+            background: url("../img/chain-left.png") top right / auto 100% repeat-x;
+
+            &:after {
+                content: ' ';
+                position: absolute;
+                right: -75px;
+                top: 0;
+                bottom: 0;
+                width: 80px;
+                background: url("../img/chain-left-right-edge.png") top right / contain no-repeat;
+            }
+        }
+
+        .chain-right {
+            background: url("../img/chain-right.png") top left / auto 100% repeat-x;
+            
+            &:after {
+                content: ' ';
+                position: absolute;
+                left: -75px;
+                top: 0;
+                bottom: 0;
+                width: 80px;
+                background: url("../img/chain-right-left-edge.png") top right / contain no-repeat;
+            }
+        }
+
+        .error-content {
+            text-align: center;
+            width: 700px;
+            display: table-cell;
+            vertical-align: middle;
+
+            h1 {
+                font: 48px/1 "Apex New Light";
+            }
+
+            p {
+                font: 24px/48px "Apex New Light";
+            }
+        }
+
+    }
+
+}

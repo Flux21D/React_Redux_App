@@ -1,0 +1,95 @@
+#end {
+  background: url("../img/end-bg.jpg") top center / cover;
+  background-repeat: no-repeat;
+  padding: 10px 0;
+  height: 100%;
+  position: relative;
+
+  .logo-container {
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .end-title {
+    font-size: 64px;
+    color: @white;
+  }
+
+  .answer-details {
+    p {
+      .text-center();
+      color: @white;
+      font: 24px/1 "Apex New Light";
+
+      span.correct-answers {
+        font-family: "Apex New Book";
+      }
+    }
+  }
+
+  .end-container {
+    width: 533px;
+    margin: auto;
+  }
+
+  .again-container {
+    .flex();
+    justify-content: center;
+    margin: 0 -40px;
+
+    > div {
+      width: 50%;
+      .text-center();
+      margin: 26px 40px;
+
+      .btn {
+        display: block;
+
+        &.btn-full {
+          img {
+            left: 5px;
+          }
+        }
+
+        &.btn-replay {
+          img {
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .external-links-container {
+    border-top: 1px solid #89898d;
+
+    .btn {
+      width: 100%;
+      margin-top: 26px;
+
+      img {
+        right: 10px;
+      }
+    }
+  }
+
+}
+
+.end-modal-container {
+  max-width: 534px;
+
+  padding: 0 117px;
+
+  p.contacted {
+    margin: 26px auto 0;
+  }
+
+
+}
